@@ -12,6 +12,7 @@ Dikkat edilmesi gereken bir nokta, eğer bu fonksiyonlar her kullanıcı için �
 ### Ne zaman kullanılır?
 
 Sistem üzerinde tek bir nesne oluşturmak istediğimizde kullanırız. Connection gibi her istek başına yeniden açılan ve sistem kaynağı tüketen sınıflarda istek başına örnek açmaktansa tek örnek üzerinden bağlantıyı kontrol etmek istediğimizde kullanırız. Bir başka örnek olarak bir web sitesine anlık giren ziyaretçi sayısının kaç olduğunu tutmak istediğimizde kullanabiliriz.
+
 **Not :** Eğer işlemimiz her kullanıcı için özel veri manipülasyonu yapacak veya bazı veriler saklayacaksa bu kalıbı kullanmamalıyız. Örnek verecek olursak, kullanıcı adını singleton sınıfımızın içine yazıp, daha sonra onu uygulamamızın içinde kullanırsak, sisteme giriş yapmış ikinci kişi için ilk kullanıcının kullanıcı adını göndermiş oluruz.
 
 ### Ne zaman kullanılmaz?
